@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.klef.jfsd.exam.Customer" table="customers">
+        <id name="id" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="age" column="age" type="int"/>
+        <property name="location" column="location" type="string"/>
+    </class>
+</hibernate-mapping>
